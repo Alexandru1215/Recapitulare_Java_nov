@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- method="get"-->
+
+
+<form action="http://127.0.0.1:5500/HTMLsomeFiles/Practica7_addAudio.html" >
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"
+           placeholder="***********" required>
+    <br><br><br>
+    <br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name"
+           placeholder="***********" required>
+    <br><br>
+    <br>
+    <br>
+    <label for="title"> Title: </label>
+    <input type="text" id="title" name="title">
+    <!-- pun pe toti intr un grup ex title pentru a putea selecta
+    doar o casuta , -->
+    <label for="Mr.">Mr.</label>
+    <input type="radio" value="Mr." id="Mr." name="title">
+    <label for="Mrs.">Mrs.</label>
+    <input type="radio" value="Mrs." id="Mrs." name="title">
+    <label for="Miss.">Miss.</label>
+    <input type="radio" value="Miss." id="Miss." name="title">
+    <label for="PhD.">PhD.</label>
+    <input type="radio" value="PhD." id="PhD." name="title">
+
+    <br><br>
+    <br>
+    <br>
+    <label for="payment"> Payment:</label>
+    <select id="payment">
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="GiftCard">GiftCard</option>
+        <option value="E-Check">E-Check</option>
+        <option value="Skrill">Skrill</option>
+        <option value="Monese">Monese</option>
+        <option value="revolut">Revolut</option>
+    </select>
+
+    <br><br>
+    <br>
+    <br>
+    <!-- vrem ca  id =  for -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"
+           placeholder="xxx@gmail.com" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- vrem ca  id =  for -->
+    <label for="b-day">Birthday</label>
+    <!--  min="2000-01-01" -->
+    <input type="date" id="b-day" name="b-day">
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- vrem ca  id =  for -->
+    <label for="quantity">Quantity:</label>
+    <!-- min="1" max="99" -->
+    <input type="number" id="quantity" name="quantity" min="1"
+           max = "99" value="1">
+
+    <br>
+    <br>
+
+    <label for="phone">Phone #:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <br>
+    <br>
+
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass"
+           placeholder="*********" maxlength="12" >
+    - max 12 characters
+    <br>
+    <br>
+
+    <label for="slider"> Rate us: </label>
+    <br>
+    1<input type="range" id="slider" name="slider" step="25" value="25">5
+
+
+    <br>
+    <br>
+
+      <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+
+        <br>
+        <br>
+        <!-- accept=".txt"> se poate uploada doar fisiere txt-->
+        <label for="myfile"> Uplaod a file :</label>
+        <input type="file" id="myfile" name="myfile"
+               accept=".txt">
+
+        <br>
+        <br>
+
+        <input type="reset">
+
+        <br><br>
+
+        <input type="submit"> <!-- Do something -->
+
+        <br><br>
+ </form>
+
+
+</body>
+</html>
